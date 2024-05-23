@@ -6,7 +6,7 @@ const elements = {
     emailInput : () => cy.get('input[name="username"]'),
     passwordInput : () => cy.get('input[name="password"]'),
     loginBtn : () => cy.xpath('//*[@id="root"]/div[2]/div/div[1]/form/div[3]/button/div/span'),
-    container : () => cy.xpath('/html/body/div[3]/div[2]/section/section/div/div/div/div/div/div/div/div/div'),
+    loginBtnGestor : () => cy.get('span').contains('Login'),
 };
 
 
@@ -19,13 +19,13 @@ class AppsmithLoginPage{
 
     static fillEmailInput(email) {
         elements.emailInput().clear();
-        elements.emailInput().type(email);
+        elements.emailInput().type(email, { log: false });
     }
 
 
     static fillPasswordInput(password) {
         elements.passwordInput().clear();
-        elements.passwordInput().type(password);
+        elements.passwordInput().type(password, { log: false });
     }
 
 
@@ -35,7 +35,7 @@ class AppsmithLoginPage{
     }
 
     static verifyLoginPage() {
-        elements.container().should('be.visible');
+        elements.loginBtnGestor().should('be.visible');
     }
 }
 
