@@ -1,0 +1,52 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Login no Gestor BAC",
+    "line": 1,
+    "id": "login-no-gestor-bac",
+    "tags": [],
+    "uri": "loginGestor.feature",
+    "elements": [
+      {
+        "id": "login-no-gestor-bac;login-válido-no-gestor-bac",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Login válido no Gestor BAC",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Eu estou na página de login do Gestor BAC",
+            "result": {
+              "status": "passed",
+              "duration": 1280000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Eu insiro meu email e senha cadastrados",
+            "result": {
+              "status": "failed",
+              "duration": 4173000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `/html/body/div[3]/div[2]/section/section/div/div/div/div/div/div/div/div/div/div[1]/div/div/div/div[2]/div/span/span/div/inputt`, but never found it.\n    at Object.emailInput (cypress/pageObjects/GestorLoginPage.js:7:26)\n    at Function.fillEmailInput (cypress/pageObjects/GestorLoginPage.js:24:17)\n    at Context.eval (cypress/e2e/step_definitions/loginGestor/loginGestor.js:18:20)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Eu consigo logar com sucesso e vou para a página de Semoventes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

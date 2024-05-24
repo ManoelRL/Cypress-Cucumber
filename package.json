@@ -12,11 +12,18 @@
   "devDependencies": {
     "cypress": "^13.9.0",
     "cypress-cucumber-preprocessor": "^4.3.1",
-    "cypress-xpath": "^2.0.1"
+    "cypress-xpath": "^2.0.1",
+    "multiple-cucumber-html-reporter": "^3.6.2"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
-    "stepDefinitions": "cypress/e2e/step_definitions"
+    "stepDefinitions": "cypress/e2e/step_definitions",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/jsonlogs",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
   },
   "dependencies": {
     "dotenv": "^16.4.5"
