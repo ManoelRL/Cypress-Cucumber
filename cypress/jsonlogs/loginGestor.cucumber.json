@@ -22,7 +22,7 @@
             "name": "Eu estou na página de login do Gestor BAC",
             "result": {
               "status": "passed",
-              "duration": 1280000000
+              "duration": 1170000000
             }
           },
           {
@@ -32,8 +32,8 @@
             "name": "Eu insiro meu email e senha cadastrados",
             "result": {
               "status": "failed",
-              "duration": 4173000000,
-              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `/html/body/div[3]/div[2]/section/section/div/div/div/div/div/div/div/div/div/div[1]/div/div/div/div[2]/div/span/span/div/inputt`, but never found it.\n    at Object.emailInput (cypress/pageObjects/GestorLoginPage.js:7:26)\n    at Function.fillEmailInput (cypress/pageObjects/GestorLoginPage.js:24:17)\n    at Context.eval (cypress/e2e/step_definitions/loginGestor/loginGestor.js:18:20)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "duration": 122000000,
+              "error_message": "CypressError: `cy.readFile(\"C:\\Users\\manoe\\Documents\\Cypress-Cucumber\\cypress\\screenshots/loginGestor.feature/Login no Gestor BAC -- Login válido no Gestor BAC (failed).png\")` timed out.\n\nhttps://on.cypress.io/readfile\n\nBecause this error occurred during a `after each` hook we are skipping all of the remaining tests.\n    at cypressErr (http://172.19.145.29:8091/__cypress/runner/cypress_runner.js:75611:18)\n    at Object.cypressErrByPath (http://172.19.145.29:8091/__cypress/runner/cypress_runner.js:75616:10)\n    at $Command.readFile (http://172.19.145.29:8091/__cypress/runner/cypress_runner.js:119862:88)\n    at cyFn (http://172.19.145.29:8091/__cypress/runner/cypress_runner.js:138923:19)\nFrom Your Spec Code:\n    at Context.eval (node_modules/cypress-cucumber-attach-screenshots-to-failed-steps/index.js:12:0)"
             }
           },
           {
